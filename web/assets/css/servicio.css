@@ -1,0 +1,156 @@
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.report-button {
+  margin: 20px;
+  outline: none;
+  z-index: 5;
+  position: absolute;
+}
+
+.report-box {
+  padding: 10px;
+  border: 2px solid black;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+ul {
+  margin: 10px;
+  padding: 0;
+  overflow: hidden;
+  display: block;
+}
+
+li {
+  display: block;
+  float: left;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.sub-list {
+  margin-left: 104px;
+}
+
+.listImage1 {
+  outline: none;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.listImage2 {
+  outline: none;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.listImage3 {
+  outline: none;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.listText {
+  font-size: 12px;
+  text-align: center;
+  word-wrap: break-word;
+  width: 60px;
+}
+
+.marker-box {
+  border: 2px solid black;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  box-sizing: border-box;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border-radius: 15px;
+}
+
+.delete-button {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 50px;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.add-marker {
+  position: absolute;
+  right: 41%;
+  bottom: -17px;
+  border: 2px solid black;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.marker-box-container {
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+.marker-box-img {
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.marker-box-header {
+  background-color: rgb(211, 207, 207);
+  padding: 5px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.marker-box-header-p {
+  margin-left: 5px;
+}
+
+.marker-box-heart {
+  float: right;
+  margin-right: 5px;
+}
+
+.marker-box-heart-number {
+  float: right;
+  margin-right: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.marker-box-like-button {
+  position: absolute;
+  right: 5%;
+  bottom: -14px;
+}

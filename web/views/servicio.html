@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nalu</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width= device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0
+    maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="../assets/css/servicio.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <input
+        type="image"
+        id="report-button"
+        class="report-button"
+        src="../assets/pictures/64/sea.png"
+        onclick="openReportBox()"
+      />
+      <div id="report-box" class="report-box" style="display: none">
+        <ul id="variableTable" style="display: block">
+          <li>
+            <img
+              id="dirtywater"
+              class="listImage1"
+              src="../assets/pictures/64/dirtywater.png"
+            />
+            <p class="listText">Agua sucia</p>
+          </li>
+          <li>
+            <img
+              id="group"
+              class="listImage1"
+              src="../assets/pictures/64/group.png"
+            />
+            <p class="listText">Gente</p>
+          </li>
+          <li>
+            <img
+              id="jellyfish"
+              class="listImage1"
+              src="../assets/pictures/64/jellyfish.png"
+            />
+            <p class="listText">Agua-vivas</p>
+          </li>
+          <li>
+            <img
+              id="waves"
+              class="listImage1"
+              src="../assets/pictures/64/waves.png"
+            />
+            <p class="listText">Olas</p>
+          </li>
+          <li>
+            <img
+              id="wind"
+              class="listImage1"
+              src="../assets/pictures/64/windy.png"
+            />
+            <p class="listText">Viento</p>
+          </li>
+        </ul>
+        <ul class="sub-list" id="dirtywaterTable" style="display: none">
+          <li>
+            <input
+              type="image"
+              id="dirtwater1"
+              class="listImage3"
+              src="../assets/pictures/64/dirtywater.png"
+            />
+            <p class="listText">Agua poco sucia</p>
+          </li>
+          <li>
+            <img
+              id="dirtwater2"
+              class="listImage3"
+              src="../assets/pictures/64/dirtywater.png"
+            />
+            <p class="listText">Agua sucia</p>
+          </li>
+          <li>
+            <img
+              id="dirtwater3"
+              class="listImage3"
+              src="../assets/pictures/64/dirtywater.png"
+            />
+            <p class="listText">Agua muy sucia</p>
+          </li>
+        </ul>
+        <ul class="sub-list" id="groupTable" style="display: none">
+          <li>
+            <img
+              id="group1"
+              class="listImage3"
+              src="../assets/pictures/64/group.png"
+            />
+            <p class="listText">Poca gente</p>
+          </li>
+          <li>
+            <img
+              id="group2"
+              class="listImage3"
+              src="../assets/pictures/64/group.png"
+            />
+            <p class="listText">Gente</p>
+          </li>
+          <li>
+            <img
+              id="group3"
+              class="listImage3"
+              src="../assets/pictures/64/group.png"
+            />
+            <p class="listText">Mucha gente</p>
+          </li>
+        </ul>
+        <ul class="sub-list" id="jellyfishTable" style="display: none">
+          <li>
+            <img
+              id="jellyfish1"
+              class="listImage3"
+              src="../assets/pictures/64/jellyfish.png"
+            />
+            <p class="listText">Pocas agua-vivas</p>
+          </li>
+          <li>
+            <img
+              id="jellyfish2"
+              class="listImage3"
+              src="../assets/pictures/64/jellyfish.png"
+            />
+            <p class="listText">Agua-vivas</p>
+          </li>
+          <li>
+            <img
+              id="jellyfish3"
+              class="listImage3"
+              src="../assets/pictures/64/jellyfish.png"
+            />
+            <p class="listText">Muchas agua-vivas</p>
+          </li>
+        </ul>
+        <ul class="sub-list" id="wavesTable" style="display: none">
+          <li>
+            <img
+              id="waves1"
+              class="listImage3"
+              src="../assets/pictures/64/waves.png"
+            />
+            <p class="listText">Olas pequeñas</p>
+          </li>
+          <li>
+            <img
+              id="waves2"
+              class="listImage3"
+              src="../assets/pictures/64/waves.png"
+            />
+            <p class="listText">Olas grandes</p>
+          </li>
+          <li>
+            <img
+              id="waves3"
+              class="listImage3"
+              src="../assets/pictures/64/waves.png"
+            />
+            <p class="listText">Olas enormes</p>
+          </li>
+        </ul>
+        <ul class="sub-list" id="windTable" style="display: none">
+          <li>
+            <img
+              id="wind1"
+              class="listImage3"
+              src="../assets/pictures/64/windy.png"
+            />
+            <p class="listText">Poco viento</p>
+          </li>
+          <li>
+            <img
+              id="wind2"
+              class="listImage3"
+              src="../assets/pictures/64/windy.png"
+            />
+            <p class="listText">Viento</p>
+          </li>
+          <li>
+            <img
+              id="wind3"
+              class="listImage3"
+              src="../assets/pictures/64/windy.png"
+            />
+            <p class="listText">Mucho viento</p>
+          </li>
+        </ul>
+        <ul id="fixedTable" style="display: block">
+          <li>
+            <img
+              id="jet"
+              class="listImage2"
+              src="../assets/pictures/64/jet.png"
+            />
+            <p class="listText">Alquiler de motos</p>
+          </li>
+          <li>
+            <img
+              id="sunumbrella"
+              class="listImage2"
+              src="../assets/pictures/64/sunumbrella.png"
+            />
+            <p class="listText">Alquiler de sombrillas</p>
+          </li>
+          <li>
+            <img
+              id="toilets"
+              class="listImage2"
+              src="../assets/pictures/64/toilets.png"
+            />
+            <p class="listText">Baños</p>
+          </li>
+          <li>
+            <img
+              id="volley"
+              class="listImage2"
+              src="../assets/pictures/64/volley.png"
+            />
+            <p class="listText">Cancha de volley</p>
+          </li>
+          <li>
+            <img
+              id="parador"
+              class="listImage2"
+              src="../assets/pictures/64/cutlery.png"
+            />
+            <p class="listText">Parador</p>
+          </li>
+        </ul>
+        <button id="add-marker" class="add-marker">Add marker</button>
+      </div>
+    </div>
+    <div id="map"></div>
+    <script src="../assets/js/app.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOEhho_jnKsgon1s6APsc4_oREVihhnLo&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
